@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Press Events</title>
+    <!-- Include Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" integrity="sha512-L..." crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Circular&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="border-b border-solid border-gray-300">
+      <nav id="menu" class="hidden w-screen min-h-96 bg-black" tabindex="-1" aria-hidden="true">
+        <div class="flex flex-col w-full">
+          <div class="container flex flex-wrap justify-end h-[21px] mx-auto py-16">
+            <button id="close-mobile-menu-btn" class="relative w-12 h-12 flex items-center justify-center rounded border border-gray-300 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-gray-900 focus:bg-gray-900" tabindex="0" aria-expanded="false" aria-controls="menu">
+              <i class="fas fa-times text-white text-3xl"></i>
+            </button>
+          </div>
+          <div class="container mx-auto flex flex-wrap justify-end">
+            <ul class="pb-14 md:pb-28 flex flex-wrap flex-col gap-y-16">
+              <li class="border-t mt-8">
+                <a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 text-3xl md:text-7xl font-serif font-thin leading-tight tracking-normal" tabindex="0">Featured Events</a>
+              </li>
+              <li class="border-t mt-8">
+                <a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 text-3xl md:text-7xl font-serif font-thin leading-tight tracking-normal" tabindex="0">Past Events</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container flex justify-between items-center h-20 py-16 mx-auto">
+        <h1 class="text-3xl font-bold">
+          <a href="#" class="hover:outline-none focus:outline-none flex items-center justify-center">
+            <i class="fas fa-microphone text-gray-600 mr-2"></i>
+            <span class="text-gray-800">Press Events</span>
+          </a>
+        </h1>
+        <button id="menu-btn" class="w-12 h-12 flex items-center justify-center rounded border border-gray-300 focus:outline-none transition-colors duration-200 ease-in-out hover:bg-gray-200 focus:bg-gray-200" tabindex="0" aria-expanded="false" aria-controls="menu">
+          <i class="fas fa-bars text-3xl"></i>
+        </button>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="flex flex-col flex-1 flex-wrap pb-4 space-y-4">
+      <!-- Feature Event 1 -->
+      <article class="container mx-auto px-4 py-4">
+        <section class="w-full aspect-auto">
+          <img src="/images/Wordle1000-LP-staticimage-2375pxw.png" alt="Hero Image" class="w-full object-contain h-auto">
+        </section>
+        <section class="grid grid-cols-12 py-4">
+          <!-- Column 1: 9/12 width -->
+          <div class="col-span-12 md:col-span-9">
+            <h2 class="text-7xl font-thin leading-tight">
+              <a href="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                The 1,000th Wordle Puzzle<br>Celebration
+              </a>
+          </h2>
+            <h3 class="text-gray-900 text-2xl font-normal leading-normal">
+              A grand invitation from New York Times Games<br>
+              March 14–27, 2024
+            </h3>
+          </div>
+          <!-- Column 2: 3/12 width -->
+          <div class="col-span-12 md:col-span-3 flex flex-col items-start md:items-end pt-4 md:pt-0">
+            <button class="px-16 py-4 inline-flex justify-center rounded-3 font-bold text-xl bg-white border border-gray-900 transition-colors focus:outline-none hover:bg-gray-100">
+              Learn More
+            </button>
+
+          </div>
+        </section>
+      </article>
+      <!-- Feature Event 2 -->
+      <article class="container mx-auto px-4 pt-4 pb-8 mb-4 border-b border-solid border-gray-900">
+        <section class="w-full aspect-auto">
+          <img src="/images/_DSC3180.jpg" alt="Hero Image" class="w-full object-contain h-auto">
+        </section>
+        <section class="grid grid-cols-12 py-4">
+          <!-- Column 1: 9/12 width -->
+          <div class="col-span-12 md:col-span-9">
+            <h2 class="text-7xl font-thin leading-tight"><a href="text-gray-900 hover:text-gray-500 focus:text-gray-500">DealBook Summit</a></h2>
+            <h3 class="text-gray-900 text-2xl font-normal leading-normal">Business. Politics. Culture. Where it all<br>
+            November 29, 2023<br>
+            New York City<br></h3>
+          </div>
+          <!-- Column 2: 3/12 width -->
+          <div class="col-span-12 md:col-span-3 flex flex-col items-start md:items-end pt-4 md:pt-0">
+            <button class="px-16 py-4 inline-flex justify-center rounded-3 font-bold text-xl bg-white border border-gray-900 transition-colors focus:outline-none hover:bg-gray-100">
+              Learn More
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- Section -->
+    <section class="pb-24">
+      <div class="container mx-auto px-4">
+        <h2 class="text-7xl font-thin leading-tight text-gray-900 w-full">
+          Past Events
+        </h2>
+        <!-- Grid 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[72px]">
+          <!-- col 1 -->
+          <div>
+            <div class="w-full aspect-video">
+              <img src="/images/NYT_TimesCenter_NYT_Climate_Forward_Nicole_Craine_0891_Branding.png" alt="Hero Image" class="w-full object-contain h-auto">
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                Climate Forward
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">Covering the world’s biggest story. From every angle.</p>
+            </h3>
+          </div>
+         <!-- col 2 -->
+         <div>
+          <div class="w-full aspect-video">
+            <img src="/images/FF_Post_Event_Hero_03.png" alt="Hero Image" class="w-full object-contain h-auto">
+          </div>
+          <h3 class="text-xl font-bold leading-snug mt-4">
+            <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+              Food Festival
+            </a>
+            <p class="text-base text-gray-900 font-normal mt-4">A day of eating, drinking and celebration.</p>
+          </h3>
+        </div>
+        </div>
+        <!-- Grid 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[52px]">
+          <!-- col 1 -->
+          <div>
+            <div class="w-full aspect-video relative">
+              <img src="/images/_W5D51621.jpg" alt="Hero Image" class="w-full object-contain h-auto">
+              <a href="#" class="absolute left-2 bottom-2 text-4xl text-white cursor-pointer"><i class="fas fa-play"></i></a>
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                All the Dal
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">With Madhur Jaffrey and The Times’s Priya Krishna</p>
+            </h3>
+          </div>
+          <!-- col 2 -->
+          <div>
+            <div class="w-full aspect-video relative">
+              <img src="/images/melissa-clark.jpg" alt="Hero Image" class="w-full object-contain h-auto">
+              <a href="#" class="absolute left-2 bottom-2 text-4xl text-white cursor-pointer"><i class="fas fa-play"></i></a>
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                The New Parm
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">With The Times’s Melissa Clark</p>
+            </h3>
+          </div>
+          <!-- col 3 -->
+          <div>
+            <div class="w-full aspect-video relative">
+              <img src="/images/Mr-Wonderful-In-The-Kitchen.jpg" alt="Hero Image" class="w-full object-contain h-auto">
+              <a href="#" class="absolute left-2 bottom-2 text-4xl text-white cursor-pointer"><i class="fas fa-play"></i></a>
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                Mr. Wonderful in the Kitchen
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">With Action Bronson, and The Times’s Sam Sifton and Jon Caramanica</p>
+            </h3>
+          </div>
+          <!-- col 4 -->
+          <div>
+            <div class="w-full aspect-video relative">
+              <img src="/images/_AR_6950_20221130508240721.png" alt="Hero Image" class="w-full object-contain h-auto">
+              <a href="#" class="absolute left-2 bottom-2 text-4xl text-white cursor-pointer"><i class="fas fa-play"></i></a>
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                Where Does Crypto Go From Here?
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">The founder of FTX talks about the challenges and potential of crypto, the future of investing, his strategies for philanthropy and more.</p>
+            </h3>
+          </div>
+          <!-- col 5 -->
+          <div>
+            <div class="w-full aspect-video relative">
+              <img src="/images/_AR_3990_20221130952038121.png" alt="Hero Image" class="w-full object-contain h-auto">
+              <a href="#" class="absolute left-2 bottom-2 text-4xl text-white cursor-pointer"><i class="fas fa-play"></i></a>
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                Go to The Economics of Uncertainty: Policy, Politics and America’s Outlook
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">The United States secretary of the treasury returns to the DealBook stage to share her insights about the economy and inflation.</p>
+            </h3>
+          </div>
+          <!-- col 6 -->
+          <div>
+            <div class="w-full aspect-video flex flex-wrap relative">
+              <img src="/images/_DSC3180.jpg" alt="Hero Image" class="w-full object-contain h-auto">
+              <a href="#" class="absolute left-2 bottom-2 text-4xl text-white cursor-pointer"><i class="fas fa-play"></i></a>
+            </div>
+            <h3 class="text-xl font-bold leading-snug mt-4">
+              <a href="#" class="text-gray-900 hover:text-gray-500 focus:text-gray-500">
+                Climate Forward
+              </a>
+              <p class="text-base text-gray-900 font-normal mt-4">Covering the world’s biggest story. From every angle.</p>
+            </h3>
+          </div>
+        </div>
+        <div class="w-full mt-11">
+          <button class="px-16 py-4 inline-flex justify-center rounded-3 font-bold text-xl bg-white border border-gray-900 transition-colors focus:outline-none hover:bg-gray-100">
+            Browse All Past Events
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Section -->
+    <!-- Section -->
+    <!-- Footer -->
+    <footer class="bg-black pt-16 px-4 min-h-screen">
+      <!-- Footer Container #1 -->
+      <div class="container border-t border-white border-solid h-auto w-full mx-auto py-4">
+        <h2 class="text-3xl font-bold">
+          <a href="#" class="hover:outline-none focus:outline-none flex">
+            <i class="fas fa-microphone text-white mr-2"></i>
+            <span class="text-gray-100">Press Events</span>
+          </a>
+        </h2>
+      </div>
+      <!-- Footer Container #2 -->
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 py-4 space-y-4 ">
+        <div class="text-white font-sans font-medium text-lg tracking-wide leading-snug">
+          <p>Live journalism from The Times.</p>
+        </div>
+        <div class="w-full">
+          <div class="grid grid-cols-2">
+            <!-- Links Col 1 -->
+            <ul class="gap-y-4">
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Featured Events</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Past Events</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Subscribe to Events</a></li>
+            </ul>
+            <!-- Links Col 2 -->
+            <ul class="gap-y-4">
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Privacy Policy</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Contact Us</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Press Inquiries</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Terms Of Service</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">Cookie Policy</a></li>
+              <li><a href="#" class="text-white focus:text-gray-500 hover:text-gray-500 font-sans font-bold text-lg tracking-normal leading-snug">State Notice</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>      
+      <!-- Footer Container #3 -->
+      <div class="container mx-auto py-4">
+        <div class="flex justify-start space-x-4" aria-label="Social Media Links" role="menubar">
+          <a href="#" class="h-14 w-14 lg:h-16 lg:w-16 flex justify-center items-center transition-colors duration-300 bg-white focus:bg-gray-500 hover:bg-gray-500 rounded-full">
+            <span class="sr-only">faacebook</span>
+            <i class="fab fa-facebook text-black text-2xl lg:text-3xl"></i>
+          </a>
+          <a href="#" class="h-14 w-14 lg:h-16 lg:w-16 flex justify-center items-center transition-colors duration-300 bg-white focus:bg-gray-500 hover:bg-gray-500 rounded-full">
+            <span class="sr-only">Twitter</span>
+            <i class="fab fa-twitter text-black text-2xl lg:text-3xl"></i>
+          </a>
+          <a href="#" class="h-14 w-14 lg:h-16 lg:w-16 flex justify-center items-center transition-colors duration-300 bg-white focus:bg-gray-500 hover:bg-gray-500 rounded-full">
+            <span class="sr-only">Instragram</span>
+            <i class="fab fa-instagram text-black text-2xl lg:text-3xl"></i>
+          </a>
+          <a href="#" class="h-14 w-14 lg:h-16 lg:w-16 flex justify-center items-center transition-colors duration-300 bg-white focus:bg-gray-500 hover:bg-gray-500 rounded-full">
+            <span class="sr-only">LinkedIn</span>
+            <i class="fab fa-linkedin text-black text-2xl lg:text-3xl"></i>
+          </a>
+        </div>        
+      </div>
+      <!-- Footer Container #4 -->
+      <div class="container mx-auto py-6"><p class="text-white font-sans font-medium text-base tracking-wide leading-snug">© 2024 The Press Events</p></div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
